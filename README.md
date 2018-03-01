@@ -10,7 +10,7 @@ Dockerized version of [hue-sync](https://github.com/kwasmich/shairport-sync) [sh
 docker build -t knapoc/hue-sync .
 
 # Build other version
-docker build --build-arg SHAIRPORT_VERSION=master -t knapoc/shairport-sync:master .
+docker build --build-arg SHAIRPORT_VERSION=master -t knapoc/hue-sync:master .
 ```
 
 ### Run
@@ -24,7 +24,7 @@ docker run -d \
     -e "BRIDGE_ACCESS_IDENTIFIER=randomidentifier" \
     -e "HUE_LAMP_COUNT=1,2,3" \
     -e "AIRPLAY_NAME=hue-sync-docker" \
-    knapoc/shairport-sync
+    knapoc/hue-sync
 ```
 
 ### Compose
@@ -34,7 +34,7 @@ docker run -d \
   services:
     shairportSync:
       restart: always
-      image: knapoc/shairport-sync
+      image: knapoc/hue-sync
       network_mode: host
       environment:
         - "HUE_BRIDGE_IP=0.0.0.0"
