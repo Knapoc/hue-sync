@@ -54,3 +54,4 @@ docker run -d \
   *  `BRIDGE_ACCESS_IDENTIFIER`: your developer identifier. For further information please check this [link](https://developers.meethue.com/documentation/getting-started).
   * `HUE_LAMP_COUNT`: Lights that are going to be controlled (The number of the lamp as it is shown in your hue App).
   * `AIRPLAY_NAME`: sets the AirPlay device name. Defaults to hue-sync-docker.
+  * `HUE_SYNC_PORT`: Listen for play requests on port. The default is to use port 5001.
